@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: inherit;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.color-display {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.color-box {
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 12px;
+    background-color: inherit;
+    color: inherit;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.color-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+.color-box p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.copy-buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.copy-btn {
+    background-color: #fff;
+    color: #222;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.copy-btn:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+#generate-btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+#generate-btn:hover {
+    background-color: #333;
+    transform: scale(1.1);
+}
